@@ -209,6 +209,10 @@ button{
     width: 350px ;
     height: 500px;
 }
+.cv a{
+    font-size: 20px;
+    font-weight: bolder;
+}
 
 /*About Section*/
 
