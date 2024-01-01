@@ -10,13 +10,13 @@
     --secondary-color: rgb(43, 41, 41);
     --bg-dark-blue: rgb(4, 4, 32);
     --bg-white: white;
-    --gray-color: rgb(175, 171, 171);
+    --gray-color: rgb(167, 164, 164);
     --gradient-color: linear-gradient(-224deg, var(--primary-color)0, rgb(79, 139, 179) 100%);
     --gradient-text: linear-gradient(120deg, blue 20.69%,rgb(120, 90, 175) 50.19%, var(--primary-color) 79.69%);
     
     /*Text Color*/
     --primary-text: rgb(165, 111, 111);
-    --text-gray: gray;
+    --text-gray: rgb(221, 217, 217);
     --text-white: white;
 }
 a{
