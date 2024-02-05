@@ -1,74 +1,86 @@
-@media (max-width:991px){
+@media (max-width:991px) {
+
     /*Custom Css */
-    section{
-        padding: 100px 0;
+    section {
+        padding: 200px 0;
     }
-    h2{
+
+    h2 {
         font-size: 30px;
-        line-height: 40px; 
+        line-height: 40px;
     }
-    h3{
+
+    h3 {
         font-size: 20px;
     }
 
-/*Nav Section*/
-.navbar-nav{
-    text-align: center;
-    background-color: var(--bg-dark-blue);
-    padding-bottom: 15px;
-}
-.nav-link{
-    margin-bottom: 10px;
+    /*Nav Section*/
+    .navbar-nav {
+        text-align: center;
+        background-color: var(--bg-dark-blue);
+        padding-bottom: 15px;
+    }
+
+    .nav-link {
+        margin-bottom: 10px;
+    }
+
+    /*Home Section*/
+    .home-image img {
+        width: 250px;
+        height: 400px;
+    }
+
+    /*About Section*/
+
 }
 
-/*Home Section*/
-.home-image img{
-    width: 250px ;
-    height: 400px;
-}
+@media (max-width:767px) {
 
-/*About Section*/
-
-}
-@media (max-width:767px){
     /*Custom Css */
-   h1{
-    font-size: 40px;
-    line-height: 48px;
-   }
-   h2{
-    font-size: 25px;
-   }
-   h3{
-    font-size: 15px;
-}
-   p{
-    font-size: 13px;
-    line-height: 24px;
-   }
-   .home_wrapper{
-    padding-top: 200px;
-    padding-bottom: 0;
-   }
-.home-image img{
-    width: 0;
-    height: 0;
-}
-/* project Section  */
-.project_wrapper .card{
-    width: 100%;
-    height: 100%;
-    min-height: 400px;
-}
-.project_wrapper .card-7 span{
-    background-size: cover !important;
-   
-}
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .home_wrapper {
+        padding-top: 200px;
+    }
+
+    .home-image img {
+        width: 0;
+        height: 0;
+    }
+
+    /* project Section  */
+    .project_wrapper .card {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+    }
+
+    .project_wrapper .card-7 span {
+        background-size: cover !important;
+
+    }
 
 
-   /*Contact Section*/
-   .contact-image img{
-    height: 400px;
-    width: 270px
-}
+    /*Contact Section*/
+    .contact-image img {
+        height: 400px;
+        width: 270px
+    }
 }
