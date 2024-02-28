@@ -249,10 +249,8 @@ button {
 /*Project Section*/
 
 .project_wrapper .card {
-
     width: 100%;
-    height: 100%;
-    min-height: 350px;
+    height: 350px;
     border: 1px solid var(--bg-white);
 }
 
@@ -312,6 +310,11 @@ button {
     width: 100%;
     background-position: center;
     background-size: 100% 100%;
+    border-radius: 5px;
+}
+.project_wrapper .card-10 video{
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 

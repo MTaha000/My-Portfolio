@@ -1,9 +1,11 @@
 /*NavBar Scroll*/
 let nav = document.querySelector(".navbar")
+let active = document.querySelector(".active")
+
 window.onscroll = function () {
-    if(document.documentElement.scrollTop > 20){
+    if (document.documentElement.scrollTop > 20) {
         nav.classList.add("header-scrolled")
-    }else{
+    } else {
         nav.classList.remove("header-scrolled")
     }
 }
@@ -11,9 +13,11 @@ window.onscroll = function () {
 let navCollapse = document.querySelector(".navbar-collapse.collapse")
 let navLink = document.querySelectorAll(".nav-link")
 
-navLink.forEach(function(a){
-   a.addEventListener("click",()=>{
-    navCollapse.classList.remove("show")
-   })
+navLink.forEach(function (a) {
+    a.addEventListener("click", () => {
+        navLink.forEach((a) => a.classList.remove("active"))
+        a.classList.add("active")
+        navCollapse.classList.remove("show")
+    })
 })
 
