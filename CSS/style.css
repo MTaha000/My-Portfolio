@@ -19,6 +19,49 @@
     --text-gray: rgb(221, 217, 217);
     --text-white: white;
 }
+/* Page Scroll Animation Classes Start */
+.sec-1{
+    transform: translateX(1000px);
+    transition: 1s ease-in-out;
+    filter: blur(10px);
+    opacity: 0;
+}
+.sec-1.show-animate,
+.sec-3.show-animate{
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+}
+.sec-2{
+    transform: scale(.2);
+    transition: 1s ease-in-out;
+    filter: blur(10px);
+    opacity: 0;
+}
+.sec-2.show-animate{
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+.sec-3{
+    transform: translateX(-1000px);
+    transition: 2s ease-in-out;
+    filter: blur(10px);
+    opacity: 0;
+}
+.sec-4{
+    filter: blur(10px);
+    opacity: 0;
+    transform: translateY(1000px);
+    transition: 1s ease-in-out;
+}
+.sec-4.show-animate{
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Page Scroll Animation Classes End */
 
 a {
     text-decoration: none;
@@ -38,7 +81,7 @@ a {
 }
 
 section {
-    padding: 200px 0 100px 0;
+    padding: 100px 0;
 }
 
 .main-btn {
@@ -66,10 +109,15 @@ h1 {
     font-weight: 800;
     color: var(--text-white);
     margin-bottom: 20px;
+    
 }
 
-h1 span {
+.span {
+    font-size: 55px;
+    line-height: 68px;
+    font-weight: 800;
     color: var(--primary-color);
+   
 }
 
 h2 {
@@ -94,6 +142,7 @@ h6 {
     display: block;
     color: var(--text-gray);
     margin-bottom: 20px;
+    height: 20px;
 }
 
 p {
@@ -132,7 +181,6 @@ button {
 /*NavBar*/
 .header_wrapper {
     position: relative;
-    padding: 10px 0;
 }
 
 .header_wrapper .navbar {
@@ -204,10 +252,14 @@ button {
 
 .home_wrapper {
     width: auto;
-    height: auto;
+    height: 100vh;
     min-height: 600px;
     padding: 100px 0;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .home_wrapper::before {
@@ -220,7 +272,8 @@ button {
     background-image: url(../IMAGE/bg.jpg);
     background-size: cover;
     background-position: center;
-    height: 90%;
+    background-attachment: fixed;
+    height: 100%;
     width: 100%;
     opacity: 0.25;
 }

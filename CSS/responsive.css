@@ -1,8 +1,14 @@
 @media (max-width:991px) {
 
     /*Custom Css */
-    section {
-        padding: 200px 0;
+    h1 {
+        font-size: 52px;
+        line-height: 48px;
+    }
+
+    .span {
+        font-size: 52px;
+        line-height: 48px;
     }
 
     h2 {
@@ -36,8 +42,17 @@
 @media (max-width:767px) {
 
     /*Custom Css */
+    h6 {
+        font-size: 12px;
+    }
+
     h1 {
-        font-size: 40px;
+        font-size: 45px;
+        line-height: 48px;
+    }
+
+    .span {
+        font-size: 45px;
         line-height: 48px;
     }
 
@@ -54,13 +69,23 @@
         line-height: 24px;
     }
 
+    section {
+        padding: 50px 0;
+    }
+
+    /* Home Section  */
     .home_wrapper {
-        padding-top: 200px;
+        padding-top: 100px;
+    }
+
+    .home-image {
+        display: flex;
+        justify-content: center;
     }
 
     .home-image img {
-        width: 0;
-        height: 0;
+        width: 200px;
+        height: 320px;
     }
 
     /* project Section  */
@@ -79,5 +104,21 @@
     .contact-image img {
         height: 400px;
         width: 270px
+    }
+}
+
+@media (max-width:400px) {
+    h6 {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 37px;
+        line-height: 38px;
+    }
+
+    .span {
+        font-size: 37px;
+        line-height: 38px;
     }
 }
