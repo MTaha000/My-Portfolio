@@ -326,7 +326,7 @@ button {
 }
 
 .project_wrapper .card-2 a {
-    background-image: url(../IMAGE/tictactoe.png);
+    background-image: url(../IMAGE/tic-tac-toe2.png);
     height: 100%;
     width: 100%;
     background-position: center;
@@ -336,7 +336,7 @@ button {
 }
 
 .project_wrapper .card-2 a:hover {
-    background-image: url(../IMAGE/ti\ tac\ toe.png);
+    background-image: url(../IMAGE/tic-tac-toe.png);
     height: 100%;
     width: 100%;
     background-position: center;
