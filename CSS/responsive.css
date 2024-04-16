@@ -81,6 +81,7 @@
     .home-image {
         display: flex;
         justify-content: center;
+        margin-top: 130px;
     }
 
     .home-image img {
@@ -120,5 +121,9 @@
     .span {
         font-size: 37px;
         line-height: 38px;
+    }
+    .home-image img {
+        width: 180px;
+        height: 270px;
     }
 }
